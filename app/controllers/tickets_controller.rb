@@ -51,8 +51,8 @@ class TicketsController < ProtectedController
   # Only allow a trusted parameter "white list" through.
   def ticket_params
     params.require(:ticket).permit(:date, :type_of_pc, :model_number,
-                                   :description)
+                                   :description, :user_id)
 
-  # params.require(:ticket).permit(:date, :type_of_pc, :model_number, :description, :user_id)
+  # params.require(:ticket).permit(:date, :type_of_pc, :model_number, :description)
   end
 end

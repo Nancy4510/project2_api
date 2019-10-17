@@ -7,7 +7,8 @@ curl --include --request POST "http://localhost:4741/tickets" \
       "date": "'"${DATE}"'",
       "type_of_pc": "'"${TYPEOFPC}"'",
       "model_number": "'"${MODELNUMBER}"'",
-      "description": "'"${DESCRIPTION}"'"
+      "description": "'"${DESCRIPTION}"'",
+      "user_id": "'"${USERID}"'"
     }
   }'
 
