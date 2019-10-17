@@ -1,6 +1,7 @@
 curl --include --request PATCH http://localhost:4741/books \
 --include \
   --header 'Content-Type: application/json' \
+  --header "Authorization: Token token=${TOKEN}" \
   --data '{
     "ticket": {
       "date": "'"${DATE}"'",
@@ -9,3 +10,5 @@ curl --include --request PATCH http://localhost:4741/books \
       "description": "'"${DESCRIPTION}"'"
     }
   }'
+
+echo

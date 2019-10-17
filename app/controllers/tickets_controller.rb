@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class TicketsController < ApplicationController
+class TicketsController < ProtectedController
   before_action :set_ticket, only: %i[show update destroy]
 
   # GET /tickets
