@@ -53,6 +53,6 @@ class TicketsController < ProtectedController
     params.require(:ticket).permit(:date, :type_of_pc, :model_number,
                                    :description)
 
-  # params.require(:ticket).permit(:date, :type_of_pc, :model_number, :description)
+  # params.require(:ticket).permit(:date, :type_of_pc, :model_number, :description, :user_id)
   end
 end
