@@ -1,9 +1,9 @@
-curl --include --request PATCH http://localhost:4741/books \
+curl --include --request POST "http://localhost:4741/tickets" \
 --include \
   --header 'Content-Type: application/json' \
   --header "Authorization: Token token=${TOKEN}" \
   --data '{
-    "ticket": {
+    "tickets": {
       "date": "'"${DATE}"'",
       "type_of_pc": "'"${TYPEOFPC}"'",
       "model_number": "'"${MODELNUMBER}"'",
