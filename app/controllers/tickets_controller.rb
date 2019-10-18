@@ -14,7 +14,8 @@ class TicketsController < ProtectedController
 
   # GET /tickets/1
   def show
-    render json: Ticket.find(params[:id])
+    render json: current_user.tickets.find(params[:id])
+    # render json: Ticket.find(params[:id])
     # render json: @ticket
   end
 
