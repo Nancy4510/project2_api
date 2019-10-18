@@ -1,5 +1,6 @@
-curl --include --request POST "http://localhost:4741/tickets" \
+curl "http://localhost:4741/tickets" \
 --include \
+--request POST \
   --header 'Content-Type: application/json' \
   --header "Authorization: Token token=${TOKEN}" \
   --data '{
@@ -7,8 +8,7 @@ curl --include --request POST "http://localhost:4741/tickets" \
       "date": "'"${DATE}"'",
       "type_of_pc": "'"${TYPEOFPC}"'",
       "model_number": "'"${MODELNUMBER}"'",
-      "description": "'"${DESCRIPTION}"'",
-      "user_id": "'"${USERID}"'"
+      "description": "'"${DESCRIPTION}"'"
     }
   }'
 
