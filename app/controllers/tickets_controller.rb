@@ -6,19 +6,22 @@ class TicketsController < ProtectedController
 
   # GET /tickets
   def index
-    @tickets = Ticket.all
+    @tickets = current_user.tickets
+    # @tickets = Ticket.all
 
     render json: @tickets
   end
 
   # GET /tickets/1
   def show
-    render json: @ticket
+    render json: Ticket.find(params[:id])
+    # render json: @ticket
   end
 
   # POST /tickets
   def create
-    @ticket = Ticket.new(ticket_params)
+    @ticket = current_user.tickets.build(ticket_params)
+    # @ticket = Ticket.new(ticket_params)
 
     if @ticket.save
       render json: @ticket, status: :created, location: @ticket
@@ -45,7 +48,7 @@ class TicketsController < ProtectedController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_ticket
-    @ticket = Ticket.find(params[:id])
+    @ticket = current_user.tickets.find(params[:id])
   end
 
   # Only allow a trusted parameter "white list" through.
@@ -53,6 +56,6 @@ class TicketsController < ProtectedController
     params.require(:ticket).permit(:date, :type_of_pc, :model_number,
                                    :description, :user_id)
 
-  # params.require(:ticket).permit(:date, :type_of_pc, :model_number, :description)
+    # params.require(:ticket).permit(:date, :type_of_pc, :model_number, :description)
   end
 end
