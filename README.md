@@ -29,7 +29,7 @@ This side of the project will be the backend where an API will be created from s
 - Ruby on Rails
 
 # **Client Side Repository**
-- Link to the client side repo: [Client Side Repository](https://github.com/Nancy4510/project2_api)
+- Link to the client side repo: [Client Side Repository](https://github.com/Nancy4510/project2_client)
 
 # **Entity Relationship Diagram (ERD)**
 ![Login Page](ERD.png)
