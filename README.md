@@ -1,5 +1,3 @@
-[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
-
 # **Project 2: Help Desk Support (API)**
 
 This part of project 2 will be the API.
@@ -30,6 +28,10 @@ This side of the project will be the backend where an API will be created from s
 
 # **Client Side Repository**
 - Link to the client side repo: [Client Side Repository](https://github.com/Nancy4510/project2_client)
+
+- Link to the deployed back-end: [Deployed Back-End](https://peaceful-cove-13394.herokuapp.com)
+
+- Link to the deployed site: [Help Desk Support](https://nancy4510.github.io/project2_client/)
 
 # **Entity Relationship Diagram (ERD)**
 ![Login Page](ERD.png)
