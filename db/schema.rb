@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_17_160749) do
+ActiveRecord::Schema.define(version: 2019_10_25_195034) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,18 @@ ActiveRecord::Schema.define(version: 2019_10_17_160749) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_examples_on_user_id"
+  end
+
+  create_table "hardwares", force: :cascade do |t|
+    t.string "date"
+    t.string "name_of_hardware"
+    t.string "processor_speed"
+    t.string "memory"
+    t.string "serial_number"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "user_id"
+    t.index ["user_id"], name: "index_hardwares_on_user_id"
   end
 
   create_table "tickets", force: :cascade do |t|
@@ -47,6 +59,7 @@ ActiveRecord::Schema.define(version: 2019_10_17_160749) do
   end
 
   add_foreign_key "examples", "users"
+  add_foreign_key "hardwares", "users"
   add_foreign_key "tickets", "users"
   add_foreign_key "users", "tickets"
 end
