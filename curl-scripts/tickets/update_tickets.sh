@@ -4,6 +4,8 @@ curl --include --request PATCH "http://localhost:4741/tickets/${ID}" \
   --data '{
     "ticket": {
       "date": "'"${DATE}"'",
+      "type_of_pc": "'"${TYPEOFPC}"'",
+      "model_number": "'"${MODELNUMBER}"'",
       "description": "'"${DESCRIPTION}"'"
     }
   }'

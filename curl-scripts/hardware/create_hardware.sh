@@ -1,4 +1,4 @@
-curl "http://localhost:4741/hardware" \
+curl "http://localhost:4741/hardwares" \
 --include \
 --request POST \
   --header 'Content-Type: application/json' \
