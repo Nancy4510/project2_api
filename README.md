@@ -42,10 +42,17 @@ This side of the project will be the backend where an API will be created from s
 - As a user, I want to be able to sign-out successfully.
 
 # **Technologies Used**
+- Heroku
+
+- PostgresSQL
+
 - Ruby
+
 - Ruby on Rails
 
 # **Client Side Repository**
+- Link to the API side repo: [API Side Repository](https://github.com/Nancy4510/project2_api)
+
 - Link to the client side repo: [Client Side Repository](https://github.com/Nancy4510/project2_client)
 
 - Link to the deployed back-end: [Deployed Back-End](https://peaceful-cove-13394.herokuapp.com)
